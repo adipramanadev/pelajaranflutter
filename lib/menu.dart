@@ -32,6 +32,34 @@ class MateriFlutter extends StatelessWidget {
                   child: const Text('UI Halaman Login'),
                 ),
               ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.blue, // Text color
+                  ),
+                  onPressed: () {
+                    // Navigate to the menu screen
+                    print('halaman pertama');
+                  },
+                  child: const Text('UI Halaman register'),
+                ),
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.blue, // Text color
+                  ),
+                  onPressed: () {
+                    // Navigate to the menu screen
+                    print('halaman pertama');
+                  },
+                  child: const Text('UI Halaman Home'),
+                ),
+              ),
             ],
           ),
         ),
