@@ -1,3 +1,4 @@
+import 'package:buttonflutter/halamanpertama.dart';
 import 'package:flutter/material.dart';
 
 class MateriFlutter extends StatelessWidget {
@@ -28,10 +29,17 @@ class MateriFlutter extends StatelessWidget {
                   onPressed: () {
                     // Navigate to the menu screen
                     print('halaman pertama');
+                    Navigator.push(
+                      context,
+                      // Use the named route to navigate to HalamanPertama
+                      MaterialPageRoute(builder: (context) => const HalamanPertama()),
+                    );
+                    
                   },
                   child: const Text('UI Halaman Login'),
                 ),
               ),
+              SizedBox(height: 16.0),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -46,6 +54,7 @@ class MateriFlutter extends StatelessWidget {
                   child: const Text('UI Halaman register'),
                 ),
               ),
+              SizedBox(height: 16.0),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
